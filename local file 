@@ -1,0 +1,68 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyPSm6eHowXMkgm22xjVqSdx",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/harshkatyan7668-ux/ITPR_LAB_WORK/blob/main/local%20file%20\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 1,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "LyuX70IK2sP6",
+        "outputId": "25409d34-8e3c-482e-84ad-b210a7a271e6"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Enter first number :3\n",
+            "Enter second number :6\n",
+            "HCF: 3\n"
+          ]
+        }
+      ],
+      "source": [
+        "#to find out oput hcf\n",
+        "#input two number\n",
+        "num1=int(input(\"Enter first number :\"))\n",
+        "num2=int(input(\"Enter second number :\"))\n",
+        "#-------------------------------------------\n",
+        "if(num2==0):\n",
+        "  print(\"HCF is\",num1)\n",
+        "else:\n",
+        "  while(num2!=0):\n",
+        "    rem=num1%num2\n",
+        "    num1=num2\n",
+        "    num2=rem\n",
+        "#------------------------------------------\n",
+        "print(\"HCF:\",num1)"
+      ]
+    }
+  ]
+}
